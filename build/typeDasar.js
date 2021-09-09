@@ -16,3 +16,7 @@ heroes = 20;
 heroes = []; // array
 heroes = {}; // object
 heroes = true || false || "string";
+// union type -> tipe data lebih dari 1
+var phone;
+phone = 628123456789;
+phone = "08123456789";
