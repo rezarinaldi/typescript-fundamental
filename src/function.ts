@@ -43,3 +43,14 @@ const fullName = (first: string, last: string = "Rinaldi"): string => {
 };
 
 console.log(fullName("Reza"));
+
+// optional parameter, setelah '?' undefined (jika parameter kedua tidak diisi)
+// number tidak dapat diberi tanda '?' (optional), tapi kalau return/kembaliannya string, maka tidak ada masalah
+// di typescript error, ketika dicompile ke javascript tidak ada masalah,
+// karena kita dapat pengaman dari typescript
+const getUmur = (val1: number, val2?: number): string => {
+  // return val1 + val2;
+  return val1 + " " + val2;
+};
+
+console.log(getUmur(10, 25));
